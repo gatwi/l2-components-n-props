@@ -1,6 +1,8 @@
 import logo from '../../logo.svg';
 import CardA from '../card-class/CardA';
 import CardB from '../card-function/CardB';
+import { CardC } from '../card-class/CardC';
+import CardD from '../card-function/CardD';
 import './App.css';
 
 // some random data
@@ -22,6 +24,7 @@ const users = [
 function App() {
   return (
     <div>
+      <CardC/>
       {/* <CardA/>
       <CardB/> */}
     </div>
