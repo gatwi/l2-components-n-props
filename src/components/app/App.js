@@ -9,24 +9,29 @@ import './App.css';
 const users = [
   {
     id:1,
-    name: "Jane Doe", 
+    name: "Gatwi Murithi", 
     role:"Software Engineer",
     image:"https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-female-battle-royale-flaticons-lineal-color-flat-icons.png"
   },
   {
     id: 2,
-    name: "John Doe", 
+    name: "Spencer Murithi", 
     role:"Architect",
     image:"https://img.icons8.com/dusk/64/000000/guest-male.png"
   }
 ]
 
 function App() {
+
+  const userData = users.map((user) => <CardA name={user.name} role={user.role} id={user.id}/>)
+  
   return (
     <div>
-      <CardC/>
-      {/* <CardA/>
-      <CardB/> */}
+      {/* <CardC/>
+      <CardD/> */}
+      {/* <CardA name={'Gatwi Murithi'} role={'Software Engineer'}/> */}
+      <CardB name={'Spencer Murithi'} role={'Architect'}/>
+      {userData}
     </div>
   );
 }
